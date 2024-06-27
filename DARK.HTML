@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: rgb(106, 105, 105);
+        }
+        #div {
+            height: 140px;
+            width: 450px;
+            background-color: rgb(42, 41, 41);
+            margin: 100px 525px;
+            border-radius: 85px;
+            padding-top: 2px;
+            box-shadow: rgb(199, 251, 120) 0px 20px 30px -10px;
+
+        }
+        #innerdiv {
+            background-color: rgb(168, 246, 50);
+            height: 100px;
+            width: 100px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+            position: relative;
+            transition: transform 0.2s ease;
+        }
+       .moved-right {
+            transform: translateX(310px); 
+            
+        }
+        #switch{
+            margin-left: 630px;
+            margin-top: 150px;
+            font-size: 60px;
+            color: rgb(168, 246, 50);
+            text-shadow: 10px;
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 id="switch">SWITCH</h1>
+    <div id="div">
+        <div id="innerdiv"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var innerDiv = document.getElementById('innerdiv');
+
+            innerDiv.addEventListener('click', function() {
+                innerDiv.classList.toggle('moved-right');
+            });
+        });
+    </script>
+</body>
+</html>
