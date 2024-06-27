@@ -1,0 +1,1 @@
+This HTML document displays a clickable circle (#innerdiv) within a larger div (#div). Clicking the circle moves it horizontally across the screen, showcasing interactivity through CSS and JavaScript.
